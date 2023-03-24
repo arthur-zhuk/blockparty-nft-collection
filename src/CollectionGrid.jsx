@@ -14,6 +14,9 @@ export default function CollectionGrid({ handleOpen }) {
             onClick={() => handleOpen(item)}
             variant="outlined"
             sx={{
+              "&:hover": {
+                cursor: "pointer",
+              },
               minHeight: 262,
               "--Card-radius": "4px",
               border: "1px solid #F1F1EC80",

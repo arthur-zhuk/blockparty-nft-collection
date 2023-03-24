@@ -61,7 +61,9 @@ export default function CollectionDetails() {
           </Box>
         </Grid>
       </Grid>
-      <Divider sx={{ marginY: 3, backgroundColor: "gray" }} />
+      <Divider
+        sx={{ marginTop: 3, marginBottom: 6, backgroundColor: "gray" }}
+      />
     </>
   );
 }
