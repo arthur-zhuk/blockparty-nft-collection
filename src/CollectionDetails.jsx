@@ -13,21 +13,21 @@ export default function CollectionDetails() {
       <Typography color="#fff" variant="h4">
         {data?.contract?.name}
       </Typography>
-      <Grid container alignItems="center" spacing={3}>
+      <Grid container spacing={3}>
         <Grid item>
           <Box
             sx={{
               display: "flex",
               justifyContent: "space-between",
-              alignItems: "center",
+              marginTop: 0.2,
             }}
           >
-            <Typography color="#fff" variant="body1">
+            <Typography color="#fff" variant="caption">
               0x8ae7...d1ad
             </Typography>
             <ContentCopyIcon
               sx={{ color: "#fff", marginLeft: 1 }}
-              fontSize="inherit"
+              fontSize="12"
               cursor="pointer"
               onClick={() => {
                 navigator.clipboard.writeText(
@@ -52,12 +52,9 @@ export default function CollectionDetails() {
               rel="noopener"
               underline="always"
             >
-              View on Etherscan
+              <Typography variant="caption">View on Etherscan</Typography>
             </Link>
-            <LaunchIcon
-              sx={{ color: "#fff", marginLeft: 1 }}
-              fontSize="inherit"
-            />
+            <LaunchIcon sx={{ color: "#fff", marginLeft: 1 }} fontSize="12" />
           </Box>
         </Grid>
       </Grid>
