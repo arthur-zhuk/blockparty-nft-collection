@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+import CollectionDetails from "./CollectionDetails";
+import CollectionGrid from "./CollectionGrid";
+import { Container } from "@mui/material";
+import Popup from "./Popup";
+import { useState } from "react";
+
+const queryClient = new QueryClient();
 
 function App() {
+  const [open, setOpen] = useState(false);
+  const [modalData, setModalData] = useState();
+  const handleOpen = (item) => {
+    setModalData(item);
+    setOpen(true);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <Container maxWidth="lg" sx={{ paddingTop: 4 }}>
+        <Popup open={open} setOpen={setOpen} modalData={modalData} />
+        <CollectionDetails />
+        <CollectionGrid handleOpen={handleOpen} />
+      </Container>
+    </QueryClientProvider>
   );
 }
 
