@@ -1,7 +1,49 @@
-# blockparty-nft-collection
+# BlockParty NFT Collection
 
-App was built with @tanstack/react-query to manage server-side state and MUI for the component library.
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Material-UI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white)
+![React Query](https://img.shields.io/badge/React%20Query-FF4154?style=for-the-badge&logo=react-query&logoColor=white)
 
-<img width="1239" alt="image" src="https://user-images.githubusercontent.com/5507707/227652780-594ee547-be9d-49bd-8a3f-3a303067858d.png">
-<img width="456" alt="image" src="https://user-images.githubusercontent.com/5507707/227652796-5736aed1-3dba-408c-9a19-7f293c2e45c2.png">
-<img width="1247" alt="image" src="https://user-images.githubusercontent.com/5507707/227653030-74a7b1b9-f05a-4d85-b10f-344a8623c5ef.png">
+A grid layout application for displaying NFT collections. Built with React Query for efficient server-side state management and Material-UI for a polished component library.
+
+## Features
+
+- **NFT Grid Display**: Beautiful grid layout for NFT collections
+- **Server-Side State**: React Query for efficient data fetching and caching
+- **Modern UI**: Material-UI components for a professional interface
+- **Responsive Design**: Optimized for various screen sizes
+
+## Tech Stack
+
+- **Frontend**: React
+- **State Management**: TanStack React Query
+- **UI Components**: Material-UI (MUI)
+- **Language**: JavaScript
+
+## Installation
+
+```bash
+git clone https://github.com/arthur-zhuk/blockparty-nft-collection.git
+cd blockparty-nft-collection
+npm install
+```
+
+## Usage
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to see the application.
+
+## Development
+
+```bash
+npm run dev    # Start development server
+npm run build  # Build for production
+```
+
+## License
+
+MIT
